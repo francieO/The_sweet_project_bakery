@@ -15,12 +15,13 @@ body {
   padding-right: 20px;
   padding-left: 20px;
   color: var(--text-color);
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
+  font-family: "Montserrat", sans-serif;
   width: 100%;
 }
 
 h1 {
-  color: rgb(255, 37, 161);
+  /* color: rgb(255, 37, 161); */
 }
 
 h1,
@@ -29,6 +30,11 @@ h3 {
   font-weight: 700;
   line-height: 1.1;
   margin-top: 0;
+  font-family: "Playfair Display", serif;
+}
+
+h4 {
+  font-family: "Monterrat", sans-serif;
 }
 
 p {
@@ -47,6 +53,7 @@ a:active {
 
 .header {
   text-align: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .home-description {
@@ -57,63 +64,94 @@ a:active {
 
 .home-description button {
   /* border-radius: 5px; */
-  height: 2em;
-  margin-top: 20px;
-  background-color: #ffffff;
-  border: solid #000000 1px;
+  /* height: 40px; */
+  margin-top: 25px;
+  background-color: #8ff5c4;
+  /* color: white; */
+  border-radius: 20px;
+  /* border: solid #000000 1px; */
+  border: none;
+  padding: 12px 20px 12px 20px;
 }
+
+.sweet-menu {
+  text-align: center;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  color: #fa5faa;
+  font-size: 18px;
+}
+
+/*Home page menu container*/
 
 .home-menu-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, [row] auto);
-  gap: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
-  /* justify-content: center; */
-  align-items: center;
+  grid-template-rows: 2;
+  grid-gap: 25px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
-@media screen and (max-width: 768px) {
-  .home-menu-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.home-menu-item {
-  background-color: rgb(252, 159, 201);
-  /* display: flex;
+.home-menu-container__item-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, 1fr);
   justify-content: center;
-  align-items: center; */
-  /* position: relative; */
+  background-color: rgb(255, 151, 151);
+  overflow: hidden;
 }
 
-.home-menu-item img {
-  max-width: 100%;
+.home-menu-container__item-container img {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
   opacity: 75%;
 }
 
-.home-menu-container button {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
-  height: 40px;
-}
-.home-menu-container .cookies {
+.home-menu-container__item-container .home-menu-text {
   grid-column: 1;
-  grid-row: row;
-}
-.cookies-overlay {
-  grid-column: 1;
-  grid-row: row 1;
-  z-index: 20;
-  text-align: center;
-  font-size: 3em;
-  /* -webkit-text-stroke: #000000 1px; */
-  color: white;
-  text-shadow: 1px 1px 2px black;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
 }
 
-.home-menu-item button {
+.home-menu-container .home-menu-overlay {
+  z-index: 21;
+}
+
+.home-menu-container__item-container div {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  z-index: 20;
+  color: white;
+}
+
+.js-home-menu-image-hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.js-home-menu-text-hover {
+}
+
+.js-hide-button {
+  display: none;
+}
+
+/* @media screen and (max-width: 768px) {
+  .home-menu-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
+/* .home-menu-item button {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -125,34 +163,51 @@ a:active {
   color: white;
   border: none;
   font-weight: bold;
-}
+} */
 
 /* .home-menu-item button h2 {
   color: #5b5b5b;
 } */
 
-.order_request_form {
-  list-style-type: none;
+/* cookies.html */
+
+.cookies-main {
+  margin-top: 60px;
 }
 
-.form_container {
-  max-width: 400px;
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
+.cookies-page-title {
+  text-align: center;
+  color: rgb(97, 95, 95);
+  margin-bottom: 60px;
 }
 
-#order {
-  background: #f9f9f9;
-  padding: 25px;
-  margin: 150px 0;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+.cookies-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 70px;
+  margin-left: 70px;
+  margin-right: 70px;
+  text-align: center;
+}
+.cookies-container img {
+  max-width: 100%;
 }
 
-.order_page_body {
-  background-color: pink;
+.cookies-container h4 {
+  margin-top: 15px;
+  font-family: "playfair-display", serif;
 }
 
 .dropdown-toggle::after {
   display: none;
-} /*# sourceMappingURL=style.css.map */
+}
+
+/* .home-menu-container .overlay:hover {
+  background-color: blue;
+  transition: 4s;
+} */
+
+.img-effect {
+  background-color: blue;
+  transition: 4s;
+}

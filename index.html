@@ -63,20 +63,22 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                MENU
+                MENU & PRICING
               </a>
               <div
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="menu_items/cakes.html">CAKES</a>
-                <a class="dropdown-item" href="menu.html">menu</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="menu_items/cakes.html"
+                  >CAKE MENU</a
+                >
+                <a class="dropdown-item" href="menu.html">SWEET MENU</a>
+                <a class="dropdown-item" href="cookies.html">COOKIES</a>
               </div>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="order.html">ORDER REQUEST</a>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="#">GALLERY</a>
             </li>
@@ -144,37 +146,73 @@
 
     <section class="home-description">
       <h1>Handmade. Custom. Delicious.</h1>
-      <p>Local delivery aavailable.</p>
-      <button>ORDER REQUEST</button>
+      <p>Local delivery available. Please contact me to order.</p>
+      <button>CONTACT TO ORDER</button>
     </section>
 
     <hr />
 
-    <section class="home-menu-container">
-      <div class="home-menu-item cookies">
-        <img src="/menu_items/cookies.jpeg" alt="" />
-        <!-- <button><h2>COOKIES</h2></button> -->
-      </div>
-      <div class="cookies-overlay">
-        <h2>COOKIES</h2>
-        <button>SEE MORE</button>
-      </div>
-      <div class="home-menu-item">
-        <img src="/menu_items/macarons.jpeg" alt="" />
-      </div>
-      <div class="home-menu-item">
-        <img src="/menu_items/cakes.jpeg" alt="" />
-      </div>
-      <div class="home-menu-item">
-        <img src="/menu_items/brigadeiros.jpeg" alt="" />
-      </div>
-      <div class="home-menu-item">
-        <img src="/menu_items/cakecicles.jpeg" alt="" />
-      </div>
-      <div class="home-menu-item">
-        <img src="/menu_items/cakes.jpeg" alt="" />
+    <p class="sweet-menu">SWEET MENU</p>
+
+    <section id="home-menu-section">
+      <div class="home-menu-container">
+        <div class="home-menu-container__item-container home-cookies">
+          <img src="/images/cookies.jpeg" alt="" />
+          <div>
+            <h3>COOKIES</h3>
+            <button class="js-hide-button">SEE MORE</button>
+          </div>
+          <div class="home-menu-overlay"></div>
+        </div>
+
+        <div class="home-menu-container__item-container home-macarons">
+          <img src="/images/macarons.jpeg" alt="" />
+          <div class="home-menu-text">
+            <h3>MACARONS</h3>
+            <button class="js-hide-button">SEE MORE</button>
+          </div>
+          <div class="home-menu-overlay"></div>
+        </div>
+
+        <div class="home-menu-container__item-container home-brigadeiros">
+          <img src="/images/brigadeiros.jpeg" alt="" />
+          <div class="home-menu-text">
+            <h3>BRIGADEIROS</h3>
+            <button class="js-hide-button">SEE MORE</button>
+          </div>
+          <div class="home-menu-overlay"></div>
+        </div>
+
+        <div class="home-menu-container__item-container home-cakes">
+          <img src="/images/cakes.jpeg" alt="" />
+          <div class="home-menu-text">
+            <h3>CAKES</h3>
+            <button class="js-hide-button">SEE MORE</button>
+          </div>
+          <div class="home-menu-overlay"></div>
+        </div>
+
+        <div class="home-menu-container__item-container home-cupcakes">
+          <img src="/images/cupcakes.jpg" alt="" />
+          <div class="home-menu-text">
+            <h3>CUPCAKES</h3>
+            <button class="js-hide-button">SEE MORE</button>
+          </div>
+          <div class="home-menu-overlay"></div>
+        </div>
+
+        <div class="home-menu-container__item-container home-cakecicles">
+          <img src="/images/cakecicles.jpeg" alt="" />
+          <div class="home-menu-text">
+            <h3>CAKECICLES</h3>
+            <button class="js-hide-button">SEE MORE</button>
+          </div>
+          <div class="home-menu-overlay"></div>
+        </div>
       </div>
     </section>
+
+    <script src="index.js"></script>
 
     <!-- bootstrap scripts -->
     <script
