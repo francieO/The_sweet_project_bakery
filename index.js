@@ -26,7 +26,12 @@ homeMenuOverlays.forEach((overlay) => {
     e.target.parentNode.children[1].children[1].classList.remove(
       "js-hide-button"
     );
-    console.log(e.target.parentNode.children[1].children[1]);
+    const button = e.target.parentNode.children[1].children[1];
+    console.log(button);
+    e.target.parentNode.children[1].children[1].classList.add("show-button");
+    button.addEventListener("transitionend", () => {
+      button.remove();
+    });
   });
 });
 

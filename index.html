@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
-    />
+
     <!-- style.css -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -57,7 +57,7 @@
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
-                href="menu.html"
+                href=""
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -69,11 +69,14 @@
                 class="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a class="dropdown-item" href="menu_items/cakes.html"
-                  >CAKE MENU</a
+                <a class="dropdown-item" href="/cookies.html"
+                  >DECORATED COOKIES</a
                 >
-                <a class="dropdown-item" href="menu.html">SWEET MENU</a>
-                <a class="dropdown-item" href="cookies.html">COOKIES</a>
+                <a class="dropdown-item" href="/macarons.html">MACARONS</a>
+                <a class="dropdown-item" href="cookies.html">BRIGADEIROS</a>
+                <a class="dropdown-item" href="menu.html">CAKES</a>
+                <a class="dropdown-item" href="cookies.html">CUPCAKES</a>
+                <a class="dropdown-item" href="menu.html">CAKECICLES</a>
               </div>
             </li>
             <!-- <li class="nav-item">
@@ -86,7 +89,7 @@
               <a class="nav-link" href="menu.html">ABOUT</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="menu.html">CONTACT</a>
+              <a class="nav-link" href="contact.html">CONTACT</a>
             </li>
           </ul>
         </div>
@@ -152,65 +155,71 @@
 
     <hr />
 
-    <p class="sweet-menu">SWEET MENU</p>
+    <p id="home-menu" class="sweet-menu">SWEET MENU</p>
 
-    <section id="home-menu-section">
-      <div class="home-menu-container">
-        <div class="home-menu-container__item-container home-cookies">
+    <section class="home-menu">
+      <div class="collection-container">
+        <div class="collection">
           <img src="/images/cookies.jpeg" alt="" />
-          <div>
-            <h3>COOKIES</h3>
-            <button class="js-hide-button">SEE MORE</button>
-          </div>
-          <div class="home-menu-overlay"></div>
+          <a href="grid.html">
+            <span class="collection-overlay"
+              ><h3 class="label-preload">
+                DECORATED<br />
+                COOKIES
+              </h3>
+              <span class="browse">BROWSE</span></span
+            >
+          </a>
         </div>
-
-        <div class="home-menu-container__item-container home-macarons">
+        <div class="collection">
           <img src="/images/macarons.jpeg" alt="" />
-          <div class="home-menu-text">
-            <h3>MACARONS</h3>
-            <button class="js-hide-button">SEE MORE</button>
-          </div>
-          <div class="home-menu-overlay"></div>
+          <a href="grid.html">
+            <span class="collection-overlay"
+              ><h3 class="label-preload">MACARONS</h3>
+              <span class="browse">BROWSE</span></span
+            >
+          </a>
         </div>
-
-        <div class="home-menu-container__item-container home-brigadeiros">
+        <div class="collection">
           <img src="/images/brigadeiros.jpeg" alt="" />
-          <div class="home-menu-text">
-            <h3>BRIGADEIROS</h3>
-            <button class="js-hide-button">SEE MORE</button>
-          </div>
-          <div class="home-menu-overlay"></div>
+          <a href="grid.html">
+            <span class="collection-overlay"
+              ><h3 class="label-preload">BRIGADEIROS</h3>
+              <span class="browse">BROWSE</span></span
+            >
+          </a>
         </div>
-
-        <div class="home-menu-container__item-container home-cakes">
+        <div class="collection">
           <img src="/images/cakes.jpeg" alt="" />
-          <div class="home-menu-text">
-            <h3>CAKES</h3>
-            <button class="js-hide-button">SEE MORE</button>
-          </div>
-          <div class="home-menu-overlay"></div>
+          <a href="grid.html">
+            <span class="collection-overlay"
+              ><h3 class="label-preload">CAKES</h3>
+              <span class="browse">BROWSE</span></span
+            >
+          </a>
         </div>
-
-        <div class="home-menu-container__item-container home-cupcakes">
+        <div class="collection">
           <img src="/images/cupcakes.jpg" alt="" />
-          <div class="home-menu-text">
-            <h3>CUPCAKES</h3>
-            <button class="js-hide-button">SEE MORE</button>
-          </div>
-          <div class="home-menu-overlay"></div>
+          <a href="grid.html">
+            <span class="collection-overlay"
+              ><h3 class="label-preload">CUPCAKES</h3>
+              <span class="browse">BROWSE</span></span
+            >
+          </a>
         </div>
-
-        <div class="home-menu-container__item-container home-cakecicles">
+        <div class="collection">
           <img src="/images/cakecicles.jpeg" alt="" />
-          <div class="home-menu-text">
-            <h3>CAKECICLES</h3>
-            <button class="js-hide-button">SEE MORE</button>
-          </div>
-          <div class="home-menu-overlay"></div>
+          <a href="grid.html">
+            <span class="collection-overlay"
+              ><h3 class="label-preload">CAKECICLES</h3>
+              <span class="browse">BROWSE</span></span
+            >
+          </a>
         </div>
       </div>
     </section>
+
+    <hr />
 
     <script src="index.js"></script>
 
