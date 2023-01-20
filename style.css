@@ -224,6 +224,10 @@ a:active {
 
 /* CAKES PAGE */
 
+.cakes-container h4 {
+  color: rgb(255, 37, 161);
+}
+
 .cakes-container {
   text-align: center;
 }
