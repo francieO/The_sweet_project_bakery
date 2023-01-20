@@ -134,7 +134,7 @@ a:active {
   }
 }
 
-@media (max-width: 384px) {
+@media (max-width: 400px) {
   .collection-container {
     grid-template-columns: repeat(1, 90vw);
   }
