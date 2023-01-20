@@ -273,6 +273,7 @@ a:active {
   .collection-menu {
     grid-template-columns: repeat(1, 90vw);
     justify-content: center;
+    text-align: center;
   }
   .collection img {
   }
