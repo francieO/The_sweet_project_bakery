@@ -15,7 +15,6 @@ body {
   padding-right: 20px;
   padding-left: 20px;
   color: var(--text-color);
-  /* font-family: "Playfair Display", serif; */
   font-family: "Montserrat", sans-serif;
   width: 100%;
 }
@@ -35,7 +34,6 @@ h3 {
 }
 
 h4 {
-  /* font-family: "Monterrat", sans-serif; */
   font-family: "Playfair Display", serif;
 }
 
@@ -53,6 +51,8 @@ a:active {
 :root {
   --text-color: black;
 }
+
+/* HEADER SECTION */
 
 .header {
   text-align: center;
@@ -79,6 +79,8 @@ a:active {
   margin-left: 10px;
 }
 
+/* HOME PAGE MAIN  */
+
 .home-description {
   text-align: center;
   margin-top: 50px;
@@ -86,20 +88,12 @@ a:active {
 }
 
 .home-description button {
-  /* border-radius: 5px; */
-  /* height: 40px; */
   margin-top: 25px;
   background-color: #8ff5c4;
-  /* color: white; */
   border-radius: 20px;
-  /* border: solid #000000 1px; */
   border: none;
   padding: 12px 20px 12px 20px;
   cursor: pointer;
-}
-
-.home-description button:hover {
-  /* opacity: 50%; */
 }
 
 .home-description a:hover {
@@ -110,6 +104,8 @@ a:active {
   outline-color: #4c8067;
 }
 
+/* home page menu section  */
+
 .sweet-menu {
   text-align: center;
   margin-top: 45px;
@@ -117,22 +113,15 @@ a:active {
   color: #fa5faa;
 }
 
-/* home page menu section  */
-
 .home-menu-section {
   margin-bottom: 50px;
 }
-
-/*Home page menu container*/
 
 .collection-container {
   justify-content: center;
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 30vw);
-  /* grid-template-rows: repeat(2, 1fr); */
-  /* margin-left: 100px;
-  margin-right: 100px; */
 }
 
 @media (max-width: 768px) {
@@ -154,7 +143,6 @@ a:active {
   background-color: rgb(255, 111, 152);
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0);
-  /* outline: 1px solid rgb(203, 203, 203); */
   border: 10px solid #fff;
 }
 
@@ -184,7 +172,6 @@ a:active {
 
 .home-menu .collection:hover > img {
   transform: scale(1.1);
-  /* opacity: 85%; */
 }
 
 .home-menu .collection > img {
@@ -216,6 +203,12 @@ a:active {
 
 /* cookies.html */
 
+.decorated-cookies {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .cookies-container img {
   max-width: 100%;
 }
@@ -225,19 +218,28 @@ a:active {
   font-family: "playfair-display", serif;
 }
 
-.dropdown-toggle::after {
-  display: none;
+/* CAKES PAGE */
+
+.cakes-container {
+  text-align: center;
 }
 
-/* .home-menu-container .overlay:hover {
-  background-color: blue;
-  transition: 4s;
-} */
-
-.img-effect {
-  background-color: blue;
-  transition: 4s;
+.cakes-img-header {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
 }
+
+.cakes-img-header div {
+  width: 250px;
+}
+
+.cakes-img-header img {
+  max-width: 100%;
+  border: 10px solid #fff;
+}
+
+/* COLLECTIONS macarons.html, cupcakes.html etc. */
 
 .collection-title {
   text-align: center;
@@ -257,8 +259,6 @@ a:active {
   grid-gap: 50px;
   grid-template-columns: 45vw 45vw;
   margin-top: 50px;
-  /* margin-left: 100px;
-  margin-right: 100px; */
 }
 
 @media (max-width: 480px) {
@@ -269,6 +269,8 @@ a:active {
   .collection img {
   }
 }
+
+/* ABOUT PAGE */
 
 .about-content {
   display: grid;
@@ -285,6 +287,8 @@ a:active {
     grid-template-columns: repeat(1, 90vw);
   }
 }
+
+/* CONTACT PAGE */
 
 .contact-container {
   text-align: center;
@@ -320,12 +324,6 @@ a:active {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-
-/* .container h1 {
-  text-align: center;
-  margin-bottom: 25px;
-  margin-top: 25px;
-} */
 
 .container .image-container {
   display: flex;
@@ -394,6 +392,8 @@ a:active {
   }
 }
 
+/* BUTTON STYLING */
+
 .contact-button {
   margin-top: 25px;
   background-color: #8ff5c4;
@@ -409,31 +409,4 @@ a:active {
 
 .contact-button:focus {
   outline-color: #4c8067;
-}
-
-/* CAKES PAGE */
-
-.cakes-container {
-  text-align: center;
-}
-
-.cakes-img-header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 25px;
-}
-
-.cakes-img-header div {
-  width: 250px;
-}
-
-.cakes-img-header img {
-  max-width: 100%;
-  border: 10px solid #fff;
-}
-
-.decorated-cookies {
-  text-align: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
 }
