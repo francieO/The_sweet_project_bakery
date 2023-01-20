@@ -59,6 +59,22 @@ a:active {
   font-family: "Montserrat", sans-serif;
 }
 
+@media (min-width: 970px) {
+  .navbar-brand {
+    display: none;
+  }
+}
+
+@media (max-width: 970px) {
+  .header img {
+    display: none;
+  }
+}
+
+.dropdown-toggle:hover {
+  cursor: auto;
+}
+
 .navbar li {
   margin-left: 10px;
 }
@@ -79,6 +95,19 @@ a:active {
   /* border: solid #000000 1px; */
   border: none;
   padding: 12px 20px 12px 20px;
+  cursor: pointer;
+}
+
+.home-description button:hover {
+  /* opacity: 50%; */
+}
+
+.home-description a:hover {
+  opacity: 50%;
+}
+
+.home-description button:focus {
+  outline-color: #4c8067;
 }
 
 .sweet-menu {
@@ -100,7 +129,7 @@ a:active {
   justify-content: center;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 30vw);
   /* grid-template-rows: repeat(2, 1fr); */
   /* margin-left: 100px;
   margin-right: 100px; */
@@ -108,7 +137,13 @@ a:active {
 
 @media (max-width: 768px) {
   .collection-container {
-    grid-template-columns: repeat(2, 300px);
+    grid-template-columns: repeat(2, 45vw);
+  }
+}
+
+@media (max-width: 384px) {
+  .collection-container {
+    grid-template-columns: repeat(1, 90vw);
   }
 }
 
@@ -181,24 +216,6 @@ a:active {
 
 /* cookies.html */
 
-.cookies-main {
-  margin-top: 60px;
-}
-
-.cookies-page-title {
-  text-align: center;
-  color: rgb(97, 95, 95);
-  margin-bottom: 60px;
-}
-
-.cookies-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 70px;
-  margin-left: 70px;
-  margin-right: 70px;
-  text-align: center;
-}
 .cookies-container img {
   max-width: 100%;
 }
@@ -238,10 +255,19 @@ a:active {
 .collection-menu {
   display: grid;
   grid-gap: 50px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 45vw 45vw;
   margin-top: 50px;
-  margin-left: 100px;
-  margin-right: 100px;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+}
+
+@media (max-width: 480px) {
+  .collection-menu {
+    grid-template-columns: repeat(1, 90vw);
+    justify-content: center;
+  }
+  .collection img {
+  }
 }
 
 .about-content {
@@ -252,6 +278,12 @@ a:active {
 
 .about-content img {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    grid-template-columns: repeat(1, 90vw);
+  }
 }
 
 .contact-container {
@@ -362,12 +394,21 @@ a:active {
   }
 }
 
-.contact_button {
+.contact-button {
   margin-top: 25px;
   background-color: #8ff5c4;
   border-radius: 20px;
   border: none;
   padding: 12px 20px 12px 20px;
+}
+
+.contact-button:hover {
+  cursor: pointer;
+  opacity: 50%;
+}
+
+.contact-button:focus {
+  outline-color: #4c8067;
 }
 
 /* CAKES PAGE */
