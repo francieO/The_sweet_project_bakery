@@ -23,80 +23,126 @@
     />
 
     <!-- style.css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
-  <body>
-    <!-- header -->
-
-    <!-- logo -->
-    <div class="header">
-      <img src="images/logotspfull.png" alt style="width: 15%" />
-
-      <!-- navbar -->
-
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav mx-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >HOME <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="menu.html"
-                id="navbarDropdownMenuLink"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                MENU & PRICING
-              </a>
-              <div
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <a class="dropdown-item" href="/cookies.html"
-                  >DECORATED COOKIES</a
-                >
-                <a class="dropdown-item" href="/macarons.html">MACARONS</a>
-                <a class="dropdown-item" href="cookies.html">BRIGADEIROS</a>
-                <a class="dropdown-item" href="menu.html">CAKES</a>
-                <a class="dropdown-item" href="cookies.html">CUPCAKES</a>
-                <a class="dropdown-item" href="menu.html">CAKECICLES</a>
-              </div>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="order.html">ORDER REQUEST</a>
-              </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="#">GALLERY</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="menu.html">ABOUT</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-
-    <div class="collection-title">
-      <h1>DECORATED COOKIES</h1>
-    </div>
-  </body>
 </html>
+
+<body>
+  <!-- header -->
+
+  <!-- logo -->
+  <div class="header">
+    <img src="/images/logotspfull.png" alt style="width: 15%" />
+
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >HOME <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="menu.html"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              MENU & PRICING
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="menu_items/cakes.html"
+                >CAKE MENU</a
+              >
+              <a class="dropdown-item" href="menu.html">SWEET MENU</a>
+              <a class="dropdown-item" href="cookies.html">COOKIES</a>
+            </div>
+          </li>
+          <!-- <li class="nav-item">
+              <a class="nav-link" href="order.html">ORDER REQUEST</a>
+            </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#">GALLERY</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <section class="home-menu">
+    <h2 class="decorated-cookies">Decorated Cookies</h2>
+    <div class="collection-container">
+      <div class="collection">
+        <img src="/images/cookies.jpeg" alt="" />
+        <a href="largecookies.html">
+          <span class="collection-overlay"
+            ><h3 class="label-preload">
+              LARGE DECORATED<br />
+              COOKIES
+            </h3>
+            <span class="browse">BROWSE</span></span
+          >
+        </a>
+      </div>
+      <div class="collection">
+        <img src="/images/miniCookies.jpeg" alt="" />
+        <a href="minicookies.html">
+          <span class="collection-overlay"
+            ><h3 class="label-preload">DECORATED MINI COOKIES</h3>
+            <span class="browse">BROWSE</span></span
+          >
+        </a>
+      </div>
+      <div class="collection">
+        <img src="/images/oreos.jpeg" alt="" />
+        <a href="decoratedoreos.html">
+          <span class="collection-overlay"
+            ><h3 class="label-preload">DECORATED OREOS</h3>
+            <span class="browse">BROWSE</span></span
+          >
+        </a>
+      </div>
+
+  <!-- <main class="cookies-main">
+    <h2 class="cookies-page-title">DECORATED COOKIES</h2>
+
+    <div class="cookies-container">
+      <div class="cookies-page-cookies">
+        <img src="/images/cookies.jpeg" alt="" />
+        <h4>DECORATED COOKIES</h4>
+        <p>Choose chocolate or vanilla. One dozen minimum per order.</p>
+        <p>$7 each</p>
+      </div>
+      <div class="cookies-page-mini-cookies">
+        <img src="/images/miniCookies.jpeg" alt="" />
+        <h4>DECORATED MINI COOKIES</h4>
+      </div>
+      <div class="cookies-page-oreos">
+        <img src="/images/oreos.jpeg" alt="" />
+        <h4>DECORATED OREOS</h4>
+      </div>
+    </div>
+  </main> -->
+</body>

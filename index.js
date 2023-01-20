@@ -1,48 +1,16 @@
-const homeMenuOverlays = document.querySelectorAll(".home-menu-overlay");
-// const homeMenuContainer = document.querySelector(".home-menu-container");
-// console.log(homeMenuContainer);
-const homeMenuItems = document.querySelectorAll(".js-home-menu-item");
-const homeMenuImageHOver = document.querySelectorAll(".home-menu-image-hover");
+const popup_image = document.querySelector(".popup-image");
+const popup_image_img = document.querySelector(".popup-image img");
+const images = document.querySelectorAll(".image");
+const close = document.querySelector(".popup-image span");
 
-// overlay.forEach((item) => {
-//   item.addEventListener("click", () => {
-//     console.log("hello");
-//     homeMenuItems.classList.add("img-effect");
-//   });
-// });
-
-// overlays.forEach((overlay) => {
-//   overlay.addEventListener("click", () => {
-//     homeMenuItems.forEach((item));
-//     item.classList.add("img-effect");
-//   });
-// });
-
-homeMenuOverlays.forEach((overlay) => {
-  overlay.addEventListener("mouseover", (e) => {
-    console.log(e.target.parentNode.children);
-    e.target.parentNode.children[0].classList.add("js-home-menu-image-hover");
-
-    e.target.parentNode.children[1].children[1].classList.remove(
-      "js-hide-button"
-    );
-    const button = e.target.parentNode.children[1].children[1];
-    console.log(button);
-    e.target.parentNode.children[1].children[1].classList.add("show-button");
-    button.addEventListener("transitionend", () => {
-      button.remove();
-    });
+images.forEach((image) => {
+  image.addEventListener("click", () => {
+    popup_image.style.display = "block";
+    let clicked_image = image.getElementsByTagName("img")[0].src;
+    popup_image_img.src = clicked_image;
   });
 });
 
-homeMenuOverlays.forEach((overlay) => {
-  overlay.addEventListener("mouseout", (e) => {
-    console.log(e.target.parentNode.children);
-    e.target.parentNode.children[0].classList.remove(
-      "js-home-menu-image-hover"
-    );
-
-    e.target.parentNode.children[1].children[1].classList.add("js-hide-button");
-    console.log(e.target.parentNode.children[1].children[1]);
-  });
+close.addEventListener("click", () => {
+  popup_image.style.display = "none";
 });

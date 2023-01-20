@@ -15,12 +15,170 @@
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
+
     <!-- style.css -->
-    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+
+  <body>
+    <!-- header -->
+
+    <!-- logo -->
+    <div class="header">
+      <img src="images/logotspfull.png" alt style="width: 15%" />
+
+      <!-- navbar -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"
+                >HOME <span class="sr-only">(current)</span></a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="about.html"
+                id="navbarDropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                MENU & PRICING
+              </a>
+              <div
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <a class="dropdown-item" href="/cookies.html"
+                  >DECORATED COOKIES</a
+                >
+                <a class="dropdown-item" href="/macarons.html">MACARONS</a>
+                <a class="dropdown-item" href="brigadeiros.html">BRIGADEIROS</a>
+                <a class="dropdown-item" href="cakes.html">CAKES</a>
+                <a class="dropdown-item" href="cupcakes.html">CUPCAKES</a>
+                <a class="dropdown-item" href="cakecicles.html">CAKECICLES</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">GALLERY</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <hr />
+
+    <h2 class="sweet-menu">Sweet Menu</h2>
+
+    <section class="home-menu">
+      <div class="collection-container">
+        <div class="collection">
+          <img src="/images/cookies.jpeg" alt="" />
+          <a href="grid.html">
+            <span class="collection-overlay"
+              ><h3 class="label-preload">
+                DECORATED<br />
+                COOKIES
+              </h3>
+              <span class="browse">BROWSE</span></span
+            >
+          </a>
+        </div>
+        <div class="collection">
+          <img src="/images/macarons.jpeg" alt="" />
+          <a href="grid.html">
+            <span class="collection-overlay"
+              ><h3 class="label-preload">MACARONS</h3>
+              <span class="browse">BROWSE</span></span
+            >
+          </a>
+        </div>
+        <div class="collection">
+          <img src="/images/brigadeiros.jpeg" alt="" />
+          <a href="grid.html">
+            <span class="collection-overlay"
+              ><h3 class="label-preload">BRIGADEIROS</h3>
+              <span class="browse">BROWSE</span></span
+            >
+          </a>
+        </div>
+        <div class="collection">
+          <img src="/images/cakes.jpeg" alt="" />
+          <a href="grid.html">
+            <span class="collection-overlay"
+              ><h3 class="label-preload">CAKES</h3>
+              <span class="browse">BROWSE</span></span
+            >
+          </a>
+        </div>
+        <div class="collection">
+          <img src="/images/cupcakes.jpg" alt="" />
+          <a href="grid.html">
+            <span class="collection-overlay"
+              ><h3 class="label-preload">CUPCAKES</h3>
+              <span class="browse">BROWSE</span></span
+            >
+          </a>
+        </div>
+        <div class="collection">
+          <img src="/images/cakecicles.jpeg" alt="" />
+          <a href="grid.html">
+            <span class="collection-overlay"
+              ><h3 class="label-preload">CAKECICLES</h3>
+              <span class="browse">BROWSE</span></span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <script src="index.js"></script>
+
+    <!-- bootstrap scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
