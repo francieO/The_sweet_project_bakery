@@ -39,7 +39,7 @@ h4 {
 
 p {
   margin-top: 0;
-  color: rgb(114, 114, 114);
+  color: rgb(0, 0, 0);
 }
 
 a,
@@ -89,6 +89,10 @@ a:active {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+.home-description a {
+  text-decoration: ;
 }
 
 .home-description button {
@@ -213,15 +217,6 @@ a:active {
   margin-bottom: 25px;
 }
 
-.cookies-container img {
-  max-width: 100%;
-}
-
-.cookies-container h4 {
-  margin-top: 15px;
-  font-family: "playfair-display", serif;
-}
-
 /* CAKES PAGE */
 
 .cakes-container h4 {
@@ -294,6 +289,9 @@ a:active {
 @media (max-width: 768px) {
   .about-content {
     grid-template-columns: repeat(1, 90vw);
+  }
+  .about-content h2 {
+    text-align: center;
   }
 }
 
