@@ -266,11 +266,12 @@ a:active {
 
 @media (max-width: 480px) {
   .collection-menu {
-    grid-template-columns: repeat(1, 90vw);
+    grid-template-columns: repeat(1, 70vw);
     justify-content: center;
     text-align: center;
   }
   .collection img {
+    width: 50%;
   }
 }
 
