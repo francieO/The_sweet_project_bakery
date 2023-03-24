@@ -74,17 +74,9 @@ a:active {
   }
 }
 
-/* .dropdown-toggle:hover {
-  cursor: auto;
-} */
-
 .navbar li {
   padding: 5px;
 }
-
-/* .dropdown-toggle::after {
-  display: none;
-} */
 
 #navbarDropdownMenuLink {
   cursor: pointer;
@@ -180,6 +172,10 @@ a:active {
   text-align: center;
   z-index: 20;
   cursor: pointer;
+}
+
+.collection-overlay {
+  transition: all 0.5s;
 }
 
 .home-menu .collection a:hover .collection-overlay {
