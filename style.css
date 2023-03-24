@@ -15,8 +15,10 @@ body {
   padding-right: 20px;
   padding-left: 20px;
   color: var(--text-color);
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
+  /* background-color: rgb(254, 233, 236); */
+  /* background-image: 'images/taylor-heery-8uK5DTVQ7As-unsplash.jpg)'; */
 }
 
 h1 {
@@ -28,13 +30,14 @@ h2,
 h3 {
   font-weight: 700;
   line-height: 1.1;
+  letter-spacing: 2px;
   margin-top: 0;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   color: rgb(255, 37, 161);
 }
 
 h4 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
 }
 
 p {
@@ -56,7 +59,7 @@ a:active {
 
 .header {
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 @media (min-width: 970px) {
@@ -148,9 +151,9 @@ a:active {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  background-color: rgb(255, 111, 152);
+  /* background-color: rgb(255, 111, 152); */
   overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   border: 10px solid #fff;
 }
 
@@ -159,6 +162,7 @@ a:active {
   height: 100%;
   grid-column: 1;
   grid-row: 1;
+  /* opacity: 75%; */
 }
 
 .home-menu .collection a {
@@ -176,10 +180,12 @@ a:active {
 
 .home-menu .collection a:hover .collection-overlay {
   transform: translateY(0);
+  transform: scale(1.1);
 }
 
 .home-menu .collection:hover > img {
   transform: scale(1.1);
+  opacity: 75%;
 }
 
 .home-menu .collection > img {
@@ -198,15 +204,23 @@ a:active {
 .label-preload {
   margin: 0;
   margin-bottom: 20px;
-  color: white;
-  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+
+  color: black;
+  /* text-shadow: 0 1px 5px rgba(255, 255, 255, 0.9); */
+
+  background-color: rgb(255, 255, 255, 0.75);
+  /* background: radial-gradient(white, rgb(255, 255, 255, 0.2)); */
+  /* linear-gradient(to left, #fcfcfc, rgb(255, 255, 255, 0.4)); */
+  padding: 5px;
 }
 
 .browse {
-  border: black solid;
+  /* border: black solid; */
+  border-radius: 7px;
   opacity: 0;
-  background-color: white;
-  padding: 4px;
+  background-color: rgb(255, 255, 255, 0.75);
+  padding: 5px;
+  font-weight: bold;
 }
 
 /* cookies.html */
