@@ -12,14 +12,30 @@ html {
 body {
   margin: 0;
   padding: 0;
-  padding-right: 20px;
-  padding-left: 20px;
+  /* padding-right: 20px;
+  padding-left: 20px; */
   color: var(--text-color);
   font-family: 'Montserrat', sans-serif;
   width: 100%;
+  position: relative;
+  /* background: linear-gradient(to bottom, #ffffff, #f6bdd7); */
+
   /* background-color: rgb(254, 233, 236); */
   /* background-image: 'images/taylor-heery-8uK5DTVQ7As-unsplash.jpg)'; */
 }
+
+/* body::before {
+  content: '';
+  background-image: url('taylor-heery-8uK5DTVQ7As-unsplash.jpg');
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  opacity: 50%;
+} */
 
 h1 {
   color: rgb(255, 37, 161);
@@ -55,6 +71,20 @@ a:active {
   --text-color: black;
 }
 
+button {
+  border: none;
+  background-color: #8ff5c4;
+  font-weight: bold;
+  padding: 10px 22px 10px 22px;
+  margin-right: 20px;
+  border-radius: 13px;
+}
+
+button:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
 /* HEADER SECTION */
 
 .header {
@@ -74,6 +104,10 @@ a:active {
   }
 }
 
+.navbar {
+  background-color: #ffe9f0;
+}
+
 .navbar li {
   padding: 5px;
 }
@@ -82,25 +116,60 @@ a:active {
   cursor: pointer;
 }
 
+.carousel img {
+  opacity: 80%;
+}
+
+.carousel {
+  position: relative;
+}
+
+/* .carousel-item::before {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(222, 250, 238);
+} */
+
 /* HOME PAGE MAIN  */
 
 .home-description {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  padding: 50px 50px;
+  position: relative;
+  /* background-color: #fbedf3; */
+  /* background-image: url('/images/1.png'); */
 }
+
+/* 
+.home-description::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -10;
+  opacity: 40%;
+  background-image: url('/images/1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 .home-description a {
   text-decoration: ;
 }
 
+.or {
+  font-size: larger;
+}
+
 .home-description button {
-  margin-top: 25px;
-  background-color: #8ff5c4;
-  border-radius: 20px;
-  border: none;
-  padding: 12px 20px 12px 20px;
-  cursor: pointer;
+  font-size: larger;
+  margin-top: 20px;
 }
 
 .home-description a:hover {
@@ -109,6 +178,10 @@ a:active {
 
 .home-description button:focus {
   outline-color: #4c8067;
+}
+
+.fa-instagram {
+  color: #fa5faa;
 }
 
 /* home page menu section  */
@@ -120,8 +193,8 @@ a:active {
   color: #fa5faa;
 }
 
-.home-menu-section {
-  margin-bottom: 50px;
+.home-menu {
+  margin-bottom: 100px;
 }
 
 .collection-container {
@@ -129,6 +202,7 @@ a:active {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 30vw);
+  opacity: 80%;
 }
 
 @media (max-width: 768px) {
@@ -238,29 +312,22 @@ a:active {
 }
 
 .cakes-container {
-  text-align: center;
+  display: grid;
 }
 
-.cakes-img-header {
+.cakes-imgs {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 25px;
+  flex-direction: column;
 }
 
-.cakes-img-header div {
-  width: 250px;
-}
-
-.cakes-img-header img {
+/* .cakes-img-header img {
   max-width: 100%;
   border: 10px solid #fff;
-}
+} */
 
 /* COLLECTIONS macarons.html, cupcakes.html etc. */
 
 .collection-title {
-  text-align: center;
-  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -272,10 +339,27 @@ a:active {
 }
 
 .collection-menu {
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: 45vw 45vw;
   margin-top: 50px;
+  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.collection-menu div {
+  width: 50%;
+}
+
+.collection-menu button {
+  border: none;
+  background-color: rgb(143, 245, 196, 0.4);
+  font-weight: bold;
+  padding: 10px 22px 10px 22px;
+  margin-right: 20px;
+  border-radius: 13px;
+}
+
+.collection-menu div {
+  margin: 0 20px;
 }
 
 @media (max-width: 480px) {
@@ -297,6 +381,10 @@ a:active {
   margin-top: 50px;
 }
 
+.about-text {
+  margin-left: 50px;
+}
+
 .about-content img {
   width: 100%;
 }
@@ -313,8 +401,10 @@ a:active {
 /* CONTACT PAGE */
 
 .contact-container {
-  text-align: center;
+  text-align: left;
   margin-top: 30px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .contact-container h1 {
@@ -327,14 +417,16 @@ a:active {
 
 .contact-method {
   font-size: larger;
-  margin: 20px;
 }
 
-.contact-method a,
+/* .contact-container a,
 a:hover,
 a:visited,
 a:active {
-  color: inherit;
+} */
+
+.contact-method i {
+  margin: 0 5px;
 }
 
 /* GALLERY */
@@ -352,7 +444,6 @@ a:active {
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
-
   padding: 10px;
 }
 
@@ -417,18 +508,61 @@ a:active {
 /* BUTTON STYLING */
 
 .contact-button {
-  margin-top: 25px;
   background-color: #8ff5c4;
-  border-radius: 20px;
+  border-radius: 13px;
   border: none;
-  padding: 12px 20px 12px 20px;
+  padding: 10px 24px 10px 24px;
 }
 
-.contact-button:hover {
-  cursor: pointer;
-  opacity: 50%;
+.contact-button-container {
+  text-align: center;
+  margin: 50px 0;
 }
 
-.contact-button:focus {
-  outline-color: #4c8067;
+/* footer */
+
+footer {
+  position: relative;
+  background-color: #ffe9f0;
+  height: 100px;
+  width: 100%;
+  color: rgb(108, 108, 108);
+  /* border-top: 1px solid gray; */
+}
+
+.footer-logo {
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.footer-links div {
+  margin: 0 150px;
+}
+
+.footer-icons a {
+  padding: 0 10px;
+  font-size: 24px;
+  letter-spacing: 0.8;
+  color: black;
+}
+
+.footer-icons .fa-instagram {
+  color: rgb(0, 0, 0);
+}
+
+.fa-phone {
+  font-size: 20px;
 }
