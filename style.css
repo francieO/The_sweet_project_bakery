@@ -332,7 +332,7 @@ button:hover {
 
 @media (max-width: 768px) {
   .about-content {
-    grid-template-columns: repeat(1, 90vw);
+    grid-template-columns: repeat(1, 95vw);
   }
   .about-content h2 {
     text-align: center;
