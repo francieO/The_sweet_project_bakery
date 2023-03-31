@@ -73,12 +73,6 @@ button:hover {
   font-family: 'Montserrat', sans-serif;
 }
 
-/* @media (max-width: 460px) {
-  .navbar-nav .nav-link {
-    font-size: 0.5rem;
-  }
-} */
-
 .navbar-nav > li {
   white-space: nowrap;
 }
@@ -100,7 +94,18 @@ button:hover {
 }
 
 .navbar li {
-  padding: 5px;
+  padding: 1%;
+}
+
+.navbar-collapse {
+  justify-content: center;
+}
+.navbar-nav {
+  width: 100%;
+  justify-content: space-around;
+}
+
+@navbar (max-width:) {
 }
 
 #navbarDropdownMenuLink {
@@ -119,12 +124,12 @@ button:hover {
 
 .home-description {
   text-align: center;
-  padding: 50px 50px;
+  padding: 6% 0;
   position: relative;
 }
 
 .home-description a {
-  text-decoration: ;
+  text-decoration: none;
 }
 
 .or {
@@ -150,15 +155,8 @@ button:hover {
 
 /* home page menu section  */
 
-.sweet-menu {
-  text-align: center;
-  margin-top: 45px;
-  margin-bottom: 45px;
-  color: #fa5faa;
-}
-
 .home-menu {
-  margin-bottom: 100px;
+  margin-bottom: 10%;
 }
 
 .collection-container {
@@ -166,7 +164,6 @@ button:hover {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 30vw);
-  opacity: 80%;
 }
 
 @media (max-width: 768px) {
@@ -478,16 +475,6 @@ footer {
   color: rgb(108, 108, 108);
 }
 
-.footer-logo {
-  height: 100px;
-  width: 100px;
-  position: absolute;
-  top: -50%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-}
-
 .footer-links {
   display: flex;
   justify-content: center;
@@ -497,7 +484,7 @@ footer {
 }
 
 .footer-links div {
-  margin: 0 150px;
+  margin: 0 20%;
 }
 
 .footer-icons a {
