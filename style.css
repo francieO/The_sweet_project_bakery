@@ -77,11 +77,11 @@ button:hover {
   white-space: nowrap;
 }
 
-@media (min-width: 970px) {
+/* @media (min-width: 970px) {
   .navbar-brand {
     display: none;
   }
-}
+} */
 
 @media (max-width: 970px) {
   .header img {
@@ -95,17 +95,6 @@ button:hover {
 
 .navbar li {
   padding: 1%;
-}
-
-.navbar-collapse {
-  justify-content: center;
-}
-.navbar-nav {
-  width: 100%;
-  justify-content: space-around;
-}
-
-@navbar (max-width:) {
 }
 
 #navbarDropdownMenuLink {
@@ -355,8 +344,8 @@ button:hover {
 .contact-container {
   text-align: left;
   margin-top: 30px;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .contact-container h1 {
