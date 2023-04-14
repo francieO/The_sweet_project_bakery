@@ -295,11 +295,10 @@ button:hover {
   border: none;
   background-color:#fa5faa;
   color: white;
-  /* background-color: rgb(143, 245, 196, 0.4); */
-  font-weight: bold;
   padding: 10px 22px;
-  margin-right: 20px;
+  /* margin-right: 20px; */
   border-radius: 7px;
+  margin: 0 10px;
 }
 
 .collection-menu-left, .collection-menu-right {
@@ -310,8 +309,8 @@ button:hover {
 .gallery-instagram-button-container {
   display: flex;
   width: 100%;
-  /* background-color: pink; */
-  justify-content: left;
+ 
+  justify-content: center;
   align-items: center;
 }
 
