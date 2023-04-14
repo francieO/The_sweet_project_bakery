@@ -21,6 +21,21 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Josefin+Sans:wght@100;200;300&display=swap"
+      rel="stylesheet"
+    />
 
     <script
       src="https://kit.fontawesome.com/385cd164de.js"
@@ -33,23 +48,12 @@
 
   <body>
     <!-- header -->
-
-    <!-- logo -->
     <div class="header">
       <img src="images/logotspfull.png" alt style="width: 180px" />
 
       <!-- navbar -->
 
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <img
-            src="images/logotspfull.png"
-            width="40"
-            height="40"
-            class="d-inline-block align-top"
-            alt=""
-          />
-        </a>
         <button
           class="navbar-toggler"
           type="button"
@@ -119,9 +123,6 @@
               </div>
             </li>
 
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="gallery.html">GALLERY</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="about.html">ABOUT</a>
             </li>
@@ -134,18 +135,19 @@
     </div>
 
     <div class="collection-menu">
-      <div>
+      <div class="collection-menu-left">
         <img class="collection-img" src="images/3.jpeg" alt="" />
         <br /><br />
-        <p>See More:</p>
-        <a href="/gallery.html"><button>GALLERY</button></a>
-
-        <a href="https://www.instagram.com/the.sweet.project/"
-          ><button>INSTAGRAM</button></a
-        >
+        <p>SEE MORE:</p>
+        <div class="gallery-instagram-button-container">
+          <a href="/gallery.html"><button>GALLERY</button></a>
+          <a href="https://www.instagram.com/the.sweet.project/"
+            ><button>INSTAGRAM</button></a
+          >
+        </div>
       </div>
-      <div>
-        <h2 class="collection-title">Artesanal Cookie Jars</h2>
+      <div class="collection-menu-right">
+        <h1 class="collection-title">ARTESANAL COOKIE JARS</h1>
 
         <p>
           Red Velvet <br />
@@ -157,15 +159,8 @@
           Big Jar: $30 <br />
           Small Jar: $10
         </p>
-
-        <br />
+        <a href="order.html"><button>PLACE ORDER</button></a>
       </div>
-    </div>
-
-    <div class="contact-button-container">
-      <a href="order.html"
-        ><button class="contact-button">PLACE ORDER</button></a
-      >
     </div>
 
     <footer>

@@ -13,7 +13,9 @@ body {
   margin: 0;
   padding: 0;
   color: var(--text-color);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 1.1rem;
   width: 100%;
   position: relative;
 }
@@ -29,12 +31,12 @@ h3 {
   line-height: 1.1;
   letter-spacing: 2px;
   margin-top: 0;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Amatic SC', cursive;
   color: rgb(255, 37, 161);
 }
 
 h4 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 p {
@@ -56,10 +58,13 @@ button {
   border: none;
   background-color: #8ff5c4;
   font-weight: bold;
-  padding: 10px 22px 10px 22px;
-  margin-right: 20px;
-  border-radius: 13px;
+  padding: 15px 22px 10px 22px;
+  /* margin-right: 20px; */
+  border-radius: 7px;
+  
 }
+
+
 
 button:hover {
   opacity: 50%;
@@ -70,18 +75,13 @@ button:hover {
 
 .header {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
 }
 
 .navbar-nav > li {
   white-space: nowrap;
 }
-
-/* @media (min-width: 970px) {
-  .navbar-brand {
-    display: none;
-  }
-} */
 
 @media (max-width: 970px) {
   .header img {
@@ -90,7 +90,9 @@ button:hover {
 }
 
 .navbar {
-  background-color: #ffe9f0;
+  border-top: 1px solid rgb(221, 221, 221);
+  border-bottom: 1px solid rgb(221, 221, 221);
+  background-color: rgb(245, 245, 245);
 }
 
 .navbar li {
@@ -101,10 +103,6 @@ button:hover {
   cursor: pointer;
 }
 
-.carousel img {
-  opacity: 80%;
-}
-
 .carousel {
   position: relative;
 }
@@ -113,30 +111,33 @@ button:hover {
 
 .home-description {
   text-align: center;
-  padding: 6% 0;
+  padding: 25px 0;
   position: relative;
-}
-
-.home-description a {
-  text-decoration: none;
+  margin-bottom: 20px;
+  background-color: rgb(245, 245, 245);
 }
 
 .or {
   font-size: larger;
+  margin: 5px 0;
 }
 
 .home-description button {
-  font-size: larger;
-  margin-top: 20px;
+  font-size: 1.1rem;
+  width: 370px;
 }
 
-.home-description a:hover {
-  opacity: 50%;
+.instagram-button {
+  background-color: #fa5faa;
+  color: white;
+  margin-bottom: 10px;
 }
 
-.home-description button:focus {
-  outline-color: #4c8067;
+.instagram-button i {
+  color: white;
+  margin-right: 5px;
 }
+
 
 .fa-instagram {
   color: #fa5faa;
@@ -145,7 +146,7 @@ button:hover {
 /* home page menu section  */
 
 .home-menu {
-  margin-bottom: 10%;
+  margin-bottom: 25px;
 }
 
 .collection-container {
@@ -270,30 +271,48 @@ button:hover {
 
 .collection-img {
   width: 100%;
-
   border-radius: 25px;
   border: 10px solid #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0);
 }
 
 .collection-menu {
-  margin-top: 50px;
+  margin-top: 25px;
   display: flex;
   padding: 0 5%;
 }
 
+
+
+.collection-menu-right a button {
+  width: 40%;
+  background-color: #8ff5c4;
+  color: black;
+ 
+}
+
 .collection-menu button {
   border: none;
-  background-color: rgb(143, 245, 196, 0.4);
+  background-color:#fa5faa;
+  color: white;
+  /* background-color: rgb(143, 245, 196, 0.4); */
   font-weight: bold;
   padding: 10px 22px;
   margin-right: 20px;
-  border-radius: 13px;
+  border-radius: 7px;
 }
 
-.collection-menu div {
+.collection-menu-left, .collection-menu-right {
   margin: 03%;
   width: 50%;
+}
+
+.gallery-instagram-button-container {
+  display: flex;
+  width: 100%;
+  /* background-color: pink; */
+  justify-content: left;
+  align-items: center;
 }
 
 @media (max-width: 480px) {
@@ -444,24 +463,26 @@ button:hover {
 
 .contact-button {
   background-color: #8ff5c4;
-  border-radius: 13px;
+  border-radius: 7px;
   border: none;
   padding: 10px 24px 10px 24px;
 }
 
 .contact-button-container {
   text-align: center;
-  margin: 50px 0;
+  width: 100%;
+  /* margin: 50px 0; */
 }
 
 /* footer */
 
 footer {
   position: relative;
-  background-color: #ffe9f0;
+  border-top: 1px solid rgb(221, 221, 221);
   height: 100px;
   width: 100%;
   color: rgb(108, 108, 108);
+  background-color: rgb(245, 245, 245);
 }
 
 .footer-links {
@@ -490,3 +511,44 @@ footer {
 .fa-phone {
   font-size: 20px;
 }
+
+/* .menu-item-section {
+  margin-top: 50px;
+  display: flex;
+  padding: 0 5%;
+}
+
+.menu-item-column-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 45vw;
+}
+
+.menu-item-column-2 {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.menu-item-section div {
+  /* width: 50vw; */
+}
+
+.insta-gallery-buttons-container {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.insta-gallery-buttons-container button {
+  margin: 10px;
+  width: 50%;
+  padding: 10px;
+  /* background-color: pink; */
+} 
