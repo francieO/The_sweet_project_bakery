@@ -127,7 +127,7 @@ button:hover {
   width: 370px;
 }
 
-.instagram-button {
+.instagram-button-home {
   background-color: #fa5faa;
   color: white;
   margin-bottom: 10px;
@@ -286,7 +286,7 @@ button:hover {
 
 
 .collection-menu-right a button {
-  width: 40%;
+  /* width: 40%; */
   background-color: #8ff5c4;
   color: black;
  
@@ -299,8 +299,20 @@ button:hover {
   padding: 10px 22px;
   /* margin-right: 20px; */
   border-radius: 7px;
-  margin: 0 10px;
+  
 }
+
+.gallery-button {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+/* .gallery-button {
+  margin-right: 10px;
+}
+.instagram-button {
+  margin-left: 10px;
+} */
 
 .collection-menu-left, .collection-menu-right {
   margin: 03%;
@@ -315,11 +327,8 @@ button:hover {
   align-items: center;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 570px) {
   .collection-menu {
-    /* grid-template-columns: repeat(1, 70vw);
-    justify-content: center;
-    text-align: center; */
     display: flex;
     flex-direction: column;
     justify-content: center;
