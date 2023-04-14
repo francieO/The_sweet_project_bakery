@@ -238,6 +238,7 @@ button:hover {
   background-color: rgb(255, 255, 255, 0.75);
   padding: 5px;
   font-weight: bold;
+  color: black;
 }
 
 /* cookies.html */
